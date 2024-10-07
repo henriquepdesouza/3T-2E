@@ -4,6 +4,36 @@
 --cor-cartao-frente: #144480;
 --cor-cartao-verso: #00F4BF;
 }
+*{ 
+    margin: 0;
+    padding: 0;
+}
 body{
     font-family: Bai Jamjuree;
+    background-color: rgb(214, 252, 244);
+}
+footer{
+background-color: black;
+color: white;
+width: 100%;
+position: fixed;
+height: 2rem;
+}
+footer p{
+    text-align: center;
+    font-size: 0.8rem;
+    margin: 0.5rem;
+
+}
+#container{
+    display: flex;
+}
+.cartao{
+    margin: 1rem;
+   background-color: rgb(194, 255, 240);
+height: 20rem;
+
+
+
+
 }
