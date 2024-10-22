@@ -1,56 +1,102 @@
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 :root{
-    --text-color:#DBE4EF;  
---cor-cartao-frente: #144480;
---cor-cartao-verso: #00F4BF;
+    --text-color: #dbe4ef
+    --cor-cartao-frente: #144480
+    --cor-cartao-verso: #00f4bf
 }
-*{ 
-    margin: 0;
-    padding: 0;
-}
+
 body{
-    font-family: Bai Jamjuree;
+    font-family: 'bai Jamjuree';
     background-image: url(img/bg-desktop.webp);
 }
+
 footer{
-background-color: black;
-color: white;
-width: 100%;
-position: fixed;
-height: 2rem;
+    background-color: black;
+    color: white;
+    width: 100%;
+    position: fixed;
+    height: 2rem;
+    
 }
+
 footer p{
     text-align: center;
     font-size: 0.8rem;
     margin: 0.5rem;
-
 }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
 #container{
     display: flex;
 }
+
 .cartao{
-    margin: 1rem;
-   background-color: rgb(194, 255, 240);
-height: 20rem;
-
-
+    margin: 1rem ;
+    background-color: rgb(233, 182, 89);
+    height: 20rem;
+    
 
 }
+
 .cartao-conteudo{
     text-align: center;
     height: 100%;
+    background-color: var(--cor-cartao-frente);
+    transform-style: preserve-3d;
+    transition: transform 300ms ease-in-out;
+}
+
+.cartao-conteudo h3{ 
+    background-color: rgb(182, 141, 88);
+    padding: 0.5rem;
+    position: absolute;
+    border-radius: 0.6rem;
+    margin: 0.6rem;
+    font-size: 1vw;
+    text-align: left;
+    border: solid 1px var(--text-color);
+    backface-visibility: hidden;
 
 }
 
-.cartao-conteudo h3{
-    background-color: white;
-    padding: 0.5rem;
-    position: absolute;
-    font-size: 1vw;
-    margin: 0.6rem;
-    border-radius: 0.6rem;
-    text-align: left;
-    
+.cartao-conteudo-pergunta p{
+    font-weight: 500;
+}
+
+.cartao-conteudo-resposta p{
+    color: var(--cor-cartao-verso);
+    font-weight: 700;
+}
 
 
+
+p{
+    color: rgb(163, 134, 81)
+}
+
+.cartao-conteudo-pergunta, .cartao-conteudo-resposta{
+    margin: 1rem;
+    backface-visibility: hidden;
+}
+
+.container{
+    display: flex;
+}
+
+.cartao:hover .cartao-conteudo{
+    transform: rotateY(180deg);
+}
+
+.cartao-conteudo-resposta{
+    transform: rotateY(180deg);
+}
+.cartao-conteudo{
+    margin-top: 2rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
 }
