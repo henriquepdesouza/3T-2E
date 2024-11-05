@@ -16,6 +16,8 @@ function criarCartao(categoria,pergunta,resposta){
 }
 
 criarCartao('Biologia','Qual a funçao da mitocondria','Produçao de energia')
+criarCartao('Matematica','Como e definido um grupo?','É um conjunto unido de uma operação onde esta é fechada no conjunto e tem algumas prioridades')
+criarCartao("Geral","Qual a funçao do ronaldo gaucho",'fazer gols')
 
 
 
